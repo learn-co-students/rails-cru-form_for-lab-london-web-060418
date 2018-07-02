@@ -1,0 +1,11 @@
+<h1><%= @artist.name %></h1>
+
+<p><%= @artist.bio %></p>
+
+<%= form_tag edit_artist_path, method: 'get' do %>
+  <%= submit_tag "Edit Artist" %>
+<% end %>
+
+<%= form_tag artists_path, method: 'get' do %>
+  <%= submit_tag "Back to Artists" %>
+<% end %>

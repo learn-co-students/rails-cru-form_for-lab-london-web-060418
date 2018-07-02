@@ -1,0 +1,11 @@
+<h1>Artists</h1>
+
+<%= form_tag new_artist_path, method: 'get' do %>
+  <%= submit_tag "Create New Artist" %>
+<% end %>
+
+<ul>
+  <% @artists.each do |artist| %>
+    <li><%= link_to artist.name, artist %></li>
+  <% end %>
+</ul>

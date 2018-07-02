@@ -1,0 +1,11 @@
+<h1>Genres</h1>
+
+<%= form_tag new_genre_path, method: 'get' do %>
+  <%= submit_tag "Create New Genre" %>
+<% end %>
+
+<ul>
+  <% @genres.each do |genre| %>
+    <li><%= link_to genre.name, genre %></li>
+  <% end %>
+</ul>
