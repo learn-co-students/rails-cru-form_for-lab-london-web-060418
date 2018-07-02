@@ -1,0 +1,9 @@
+<h1><%= @genre.name %></h1>
+
+<%= form_tag edit_genre_path, method: 'get' do %>
+  <%= submit_tag "Edit Genre" %>
+<% end %>
+
+<%= form_tag genres_path, method: 'get' do %>
+  <%= submit_tag "Back to Genres" %>
+<% end %>

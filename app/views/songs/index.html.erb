@@ -1,0 +1,9 @@
+<h1>Songs</h1>
+
+<%= form_tag new_song_path, method: 'get' do %>
+  <%= submit_tag "Create New Song" %>
+<% end %>
+
+<% @songs.each do |song| %>
+  <p><%= link_to song.name, song %></p>
+<% end %>
